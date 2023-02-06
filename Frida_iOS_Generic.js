@@ -14,20 +14,18 @@ if (ObjC.available)
                 console.log("[+] Class Name: " + className);
                 console.log("[+] Method Name: " + funcName); 
             },
-          
-            onLeave: function(returnvalue) 
-            {  
-                console.log('Return Value: ');
+            onLeave: function(retval) 
+            {
+                console.log('Return Value: ' + retval);
             }
-        }); 
-       
-    } 
+        });
+    }
     catch(error) 
     {
         console.log("[!] Exception: " + error.message); 
-    } 
+    }
 }  
 else 
-{ 
+{
     console.log("Objective-C Runtime is not available!"); 
 }
