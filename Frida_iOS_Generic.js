@@ -16,6 +16,7 @@ if (ObjC.available)
             },
             onLeave: function(retval) 
             {
+                // Cast to a string if needed - ObjC.Object(retval).toString()
                 console.log('Return Value: ' + retval);
             }
         });
