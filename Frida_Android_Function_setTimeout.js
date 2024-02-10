@@ -3,7 +3,9 @@ setTimeout(function()
 { 
     Java.perform(function() 
     {
-        // Extra Code Goes Here
+        /*
+          OUR OWN IMPLEMENTATION OF THE METHOD
+        */
 
     });
 }, 0);

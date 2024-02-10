@@ -1,19 +1,23 @@
 Java.perform(function () 
 {
     // Name of the class to start hooking.
-    var MainActivity = Java.use("com.example.name.classname");
+    var class_reference = Java.use("package_name.class");
 
     // Simple implementation
-    MainActivity.function_name.implementation = function() 
+    class_reference.method_to_hook.implementation = function(args) 
     {
-        // write the modified function code here
+        /*
+          OUR OWN IMPLEMENTATION OF THE METHOD
+        */
         return false;
     }
 
     // Simple implementation with overloading
-    MainActivity.function_name.overload("java.lang.String", "java.lang.String").implementation = function() 
+    class_reference.method_to_hook.overload("java.lang.String", "java.lang.String").implementation = function(args) 
     {
-        // write the modified function code here
+        /*
+          OUR OWN IMPLEMENTATION OF THE METHOD
+        */
         return false;
     }    
 });
