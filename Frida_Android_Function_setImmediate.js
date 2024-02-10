@@ -2,9 +2,11 @@ setImmediate(function()
 {
     Java.perform(function() 
     { 
-        var currentApplication = Java.use("android.app.ActivityThread").currentApplication();
+        var currentApplication = Java.use("package_name.class").currentApplication();
         var context = currentApplication.getApplicationContext();  
 
-        // Extra Code Goes Here
+        /*
+          OUR OWN IMPLEMENTATION OF THE METHOD
+        */
     });
 });
