@@ -1,10 +1,10 @@
 Java.perform(function () 
 {
     // Name of the class to start hooking.
-    var class_reference = Java.use("package_name.class");
+    var CLASS_REFERENCE = Java.use("package_name.class");
 
     // Simple implementation
-    class_reference.method_to_hook.implementation = function(args) 
+    CLASS_REFERENCE.METHOD_TO_HOOK.implementation = function(args) 
     {
         /*
           OUR OWN IMPLEMENTATION OF THE METHOD
@@ -13,7 +13,7 @@ Java.perform(function ()
     }
 
     // Simple implementation with overloading
-    class_reference.method_to_hook.overload("java.lang.String", "java.lang.String").implementation = function(args) 
+    CLASS_REFERENCE.METHOD_TO_HOOK.overload("java.lang.String", "int").implementation = function(args) 
     {
         /*
           OUR OWN IMPLEMENTATION OF THE METHOD
@@ -22,5 +22,9 @@ Java.perform(function ()
     }
 
     // Simple implementation of calling static method
-    class_reference.static_method();
+    CLASS_REFERENCE.STATIC_METHOD();
+
+    // Simple implementation of changing variable value
+    CLASS_REFERENCE.VARIABLE.value = VALUE;
 });
+
