@@ -19,5 +19,8 @@ Java.perform(function ()
           OUR OWN IMPLEMENTATION OF THE METHOD
         */
         return false;
-    }    
+    }
+
+    // Simple implementation of calling static method
+    class_reference.static_method();
 });
