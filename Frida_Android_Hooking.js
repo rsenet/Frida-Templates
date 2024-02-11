@@ -3,7 +3,7 @@
 Java.perform(function () 
 {
     // Name of the class to start hooking.
-    var CLASS_REFERENCE = Java.use("package_name.class");
+    var CLASS_REFERENCE = Java.use("PACKAGE_NAME.CLASS");
 
     // Simple implementation
     CLASS_REFERENCE.METHOD_TO_HOOK.implementation = function(ARGS) 
@@ -32,6 +32,4 @@ Java.perform(function ()
     // Simple creation and use of a class object
     var CLASS_OBJ = CLASS_REFERENCE.$new();
     CLASS_OBJ.METHOD();
-
 });
-

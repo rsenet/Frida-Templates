@@ -1,6 +1,6 @@
 Java.perform(function () 
 {
-    Java.choose("package_name", 
+    Java.choose("PACKAGE_NAME.CLASS", 
     {
         // OnMatch gets called with 1 or more arguments once Frida finds a match for your request
         onMatch : function(instance)
