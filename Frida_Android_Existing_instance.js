@@ -1,3 +1,5 @@
+// All capital letters must be replaced
+
 Java.perform(function () 
 {
     Java.choose("PACKAGE_NAME.CLASS", 
