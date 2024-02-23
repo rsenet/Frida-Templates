@@ -1,5 +1,11 @@
 // All capital letters must be replaced
 
+// Choose only one method to get your target address
+var TARGET_ADDRESS = Module.enumerateExports(LIB_SO);
+var TARGET_ADDRESS = Module.getExportByName(LIB_SO, FUNC_NAME);
+var TARGET_ADDRESS = Module.findExportByName(LIB_SO, FUNC_NAME);
+var TARGET_ADDRESS = Module.enumerateImports(LIB_SO);
+
 Interceptor.attach(TARGET_ADDRESS, 
 {
     onEnter: function (args) 
