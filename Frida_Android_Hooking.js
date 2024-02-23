@@ -8,18 +8,20 @@ Java.perform(function ()
     // Simple implementation
     CLASS_REFERENCE.METHOD_TO_HOOK.implementation = function(ARGS) 
     {
-        /*
-          OUR OWN IMPLEMENTATION OF THE METHOD
-        */
+        // Call hooked function and save value in a variable
+        var MYVAR = this.METHOD_TO_HOOK(ARGS)
+
+        // Make a return
         return false;
     }
 
     // Simple implementation with overloading
     CLASS_REFERENCE.METHOD_TO_HOOK.overload("java.lang.String", "int").implementation = function(ARGS) 
     {
-        /*
-          OUR OWN IMPLEMENTATION OF THE METHOD
-        */
+        // Call hooked function and save value in a variable
+        var MYVAR = this.METHOD_TO_HOOK(ARGS)
+
+        // Make a return
         return false;
     }
 
