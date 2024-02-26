@@ -1,4 +1,6 @@
-// Call func after delay milliseconds,
+// All capital letters must be replaced
+
+// Call function after a delay of MILLISECONDES milliseconds
 setTimeout(function() 
 { 
     Java.perform(function() 
@@ -8,4 +10,4 @@ setTimeout(function()
         */
 
     });
-}, 0);
+}, MILLISECONDES);
