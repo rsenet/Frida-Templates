@@ -30,9 +30,19 @@ Interceptor.attach(TARGET_ADDRESS,
 
     onLeave: function (retval) 
     {
-        console.log('Leaving function');
         /*
             MODIFY OR LOG RETURN VALUE
+
+            Replace int and hexadecimal values
+            ----------------------------------
+            retval.replace(0x1);
+            retval.replace(1337);
+
+            Replace string values
+            ---------------------
+            const dstAddr = Java.vm.getEnv().newStringUtf("NewString");
+            retval.replace(dstAddr);
         */
+        console.log('Leaving function');
     }
 });
