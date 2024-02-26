@@ -20,13 +20,6 @@ exportedFunctions.forEach(function(element, index)
     }
 })
  
-Interceptor.attach(SEARCH_FUNCTION_ADDR, 
-{ 
-    onEnter: function(args) 
-    {
-    },
 
-    onLeave: function(ret)
-    {
-    }
-})
+// SEARCH_FUNCTION_ADDR can now be used
+
