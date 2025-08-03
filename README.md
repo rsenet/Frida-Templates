@@ -16,6 +16,10 @@ This Frida script intercepts and modifies the behaviour of a method in a specifi
 
 This Frida script searches for instances of a specific Java class (PACKAGE_NAME.CLASS) in an application. Once found, it allows these instances to be logged or manipulated using custom implementations in the onMatch and onComplete functions. 
 
+### Frida Android Native Memory String Scanner
+
+This Frida script scans the memory of a native shared library (LIB_SO) to find a specific byte pattern (PATTERN). When a match is found, it attempts to read a C-style string at the matched address and logs it. It can be used to locate hardcoded flags, secrets, or identifiers in memory. A hexdump of the surrounding memory is also provided for further analysis. The scan process uses Memory.scan with custom onMatch and onComplete callbacks.
+
 ### Frida Android Native Call
 
 This Frida script allows to call a specific native function from its address (ADDRESS_NATIVE_FUNCTION). It creates an instance of the native function, specifying its return type and argument types, then invokes it with the necessary arguments.
