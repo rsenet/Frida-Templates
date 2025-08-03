@@ -3,7 +3,7 @@
 const lib = Process.getModuleByName(LIB_SO);
 console.log("LIB_SO loaded at:", lib.base);
 
-// Base64 version of your pattern. Ex: "464c4147" for "FLAG"
+// hexadecimal version of your pattern. Ex: "464c4147" for "FLAG"
 const pattern = "PATTERN"; 
 
 Memory.scan(lib.base, lib.size, pattern,
