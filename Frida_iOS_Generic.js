@@ -47,7 +47,7 @@ if (ObjC.available)
                 // Cast to a string if needed - ObjC.Object(retval).toString()
                 console.log("\tOriginal Value: " + retval);
 
-                // Usefull for some bypass
+                // Useful for some bypass
                 // retval.replace(newretval)
                 // console.log("\tNew Value: " + newretval)
 
